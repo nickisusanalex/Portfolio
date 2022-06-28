@@ -1,0 +1,29 @@
+@font-face {
+    font-family: Ultra_Light_Regular;
+    src: url(/fonts/regular/Ultralight.otf);
+}
+
+@font-face {
+    font-family: Regular_Regular;
+    src: url(/fonts/regular/Regular.otf);
+}
+
+@font-face {
+    font-family: Medium_Regular;
+    src: url(/fonts/regular/Medium.otf);
+}
+
+@font-face {
+    font-family: Heavy_Regular;
+    src: url(/fonts/regular/Heavy.otf);
+}
+
+@font-face {
+    font-family: Demi_Regular;
+    src: url(/fonts/regular/Demi.otf);
+}
+
+@font-face {
+    font-family: Bold_Regular;
+    src: url(/fonts/regular/Bold.otf);
+}

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="fonts.css">
+    <link rel="icon" type="image/x-icon" href="/images/Fav Icon.png">
+
+  </head>
+  <body>
+    <div class="titan-background">
+      <span class="stars stars-L"></span>
+      <span class="stars stars-M"></span>
+      <span class="stars stars-S"></span>
+    </div>
+    <header>
+      <a href="#" class="brand"><img src="/videos/Fav Icon.png"></a>
+      <div class="menu-btn"></div>
+      <div class="navigation">
+        <!-- <div class="navigation-items">
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#">Explore</a>
+          <a href="#">Contact</a>
+        </div> -->
+      </div>
+    </header>
+
+    <section class="home">
+      <video class="video-slide active" src="/Videos/2.mp4" autoplay muted loop></video>
+      <video class="video-slide" src="/Videos/1.mp4" autoplay muted loop></video>
+      <video class="video-slide" src="3.mp4" autoplay muted loop></video>
+      <video class="video-slide" src="4.mp4" autoplay muted loop></video>
+      <video class="video-slide" src="5.mp4" autoplay muted loop></video>
+      <div class="content active">
+        <h1>The Residence/ Udupi<span></span></h1>
+        <p>In a distance of under a km from the Manipal Lake, lies a small residential community - the private dwelling conceived for the conservation zoologist and his family, set on the perimeters of a moderately dense residential space, with exquisite sunset views towards the greens, makes for the perfect use of the limited plot of land.</p>
+        
+        <div class="hero-stats">
+
+          <div class="hero-area">
+
+            <h3>Area : <span>300m&#178;</span></h3>
+
+          </div>
+
+          <div class="hero-built-up">
+
+            <h3>Built-Up : <span>232m&#178;</span></h3>
+
+          </div>
+
+          <div class="hero-location">
+
+            <h3>Location : <span>Udupi</span></h3>
+
+          </div>
+
+      </div>
+
+        <div class="hero-buttons">
+
+            <a href="residence.html" target="_blank">
+
+                <img src="/Videos/scroll-down_button.png" alt="scroll-down">
+                <h5><span>Read More</span></h5>
+
+            </a>
+
+        </div>
+        
+      </div>
+      <div class="content">
+        <h1>The Hospital/ Udupi<span></span></h1>
+
+        <p>Occupying an extensive 8,080m&#178;, the proposed multi-specialty hospital in Kaup, will provide the city a new and progressive face of healthcare infrastructure. With ideas drawn from biophilia to promote recovery and rejevenation for patients, the institution would be first of a kind in the region.</p>
+        
+        <div class="hero-stats">
+
+          <div class="hero-area">
+
+              <h3>Area : <span>220m&#178;</span></h3>
+
+          </div>
+
+          <div class="hero-built-up">
+
+              <h3>Built-Up : <span>6700sq.ft</span></h3>
+
+          </div>
+
+          <div class="hero-location">
+
+              <h3>Location : <span>Udupi</span></h3>
+
+          </div>
+
+      </div>
+
+        <div class="hero-buttons">
+
+          <a href="hospital.html" target="_blank">
+
+                <img src="/Videos/scroll-down_button.png" alt="scroll-down">
+                <h5><span>Read More</span></h5>
+
+            </a>
+
+        </div>
+        
+      </div>
+      </div>
+      <!-- <div class="media-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+      </div> -->
+      <div class="slider-navigation">
+        <div class="nav-btn active"></div>
+        <div class="nav-btn"></div>
+      </div>
+    </section>
+
+    <script type="text/javascript">
+    //Javacript for responsive navigation menu
+    const menuBtn = document.querySelector(".menu-btn");
+    const navigation = document.querySelector(".navigation");
+
+    menuBtn.addEventListener("click", () => {
+      menuBtn.classList.toggle("active");
+      navigation.classList.toggle("active");
+    });
+
+    //Javacript for video slider navigation
+    const btns = document.querySelectorAll(".nav-btn");
+    const slides = document.querySelectorAll(".video-slide");
+    const contents = document.querySelectorAll(".content");
+
+    var sliderNav = function(manual){
+      btns.forEach((btn) => {
+        btn.classList.remove("active");
+      });
+
+      slides.forEach((slide) => {
+        slide.classList.remove("active");
+      });
+
+      contents.forEach((content) => {
+        content.classList.remove("active");
+      });
+
+      btns[manual].classList.add("active");
+      slides[manual].classList.add("active");
+      contents[manual].classList.add("active");
+    }
+
+    btns.forEach((btn, i) => {
+      btn.addEventListener("click", () => {
+        sliderNav(i);
+      });
+    });
+    </script>
+
+  </body>
+</html>
